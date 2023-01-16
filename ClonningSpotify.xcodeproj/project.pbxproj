@@ -10,6 +10,8 @@
 		40E845E00CFB2CD1AC09549B /* Pods_ClonningSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D0CC9B4529CB34C0C8A838 /* Pods_ClonningSpotify.framework */; };
 		7F52345E296C68A700751B37 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52345D296C68A700751B37 /* Extension.swift */; };
 		7F523460296D807B00751B37 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52345F296D807B00751B37 /* AuthResponse.swift */; };
+		7FBC759229751B4B00BD824F /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC759129751B4B00BD824F /* NewReleasesResponse.swift */; };
+		7FBC759429751F5600BD824F /* APIImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC759329751F5600BD824F /* APIImageModel.swift */; };
 		7FE32E04296FD20E003BAA03 /* SettingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE32E03296FD20E003BAA03 /* SettingModels.swift */; };
 		7FF421F5296BF7C9002F1009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF421F4296BF7C9002F1009 /* AppDelegate.swift */; };
 		7FF421F7296BF7C9002F1009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF421F6296BF7C9002F1009 /* SceneDelegate.swift */; };
@@ -40,6 +42,8 @@
 		5D013E14A3EE0B403A6C7ACE /* Pods-ClonningSpotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClonningSpotify.debug.xcconfig"; path = "Target Support Files/Pods-ClonningSpotify/Pods-ClonningSpotify.debug.xcconfig"; sourceTree = "<group>"; };
 		7F52345D296C68A700751B37 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		7F52345F296D807B00751B37 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		7FBC759129751B4B00BD824F /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
+		7FBC759329751F5600BD824F /* APIImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImageModel.swift; sourceTree = "<group>"; };
 		7FE32E03296FD20E003BAA03 /* SettingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModels.swift; sourceTree = "<group>"; };
 		7FF421F1296BF7C9002F1009 /* ClonningSpotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClonningSpotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF421F4296BF7C9002F1009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				7FF42230296BFB7E002F1009 /* UserProfileModel.swift */,
 				7F52345F296D807B00751B37 /* AuthResponse.swift */,
 				7FE32E03296FD20E003BAA03 /* SettingModels.swift */,
+				7FBC759129751B4B00BD824F /* NewReleasesResponse.swift */,
+				7FBC759329751F5600BD824F /* APIImageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,7 +207,6 @@
 				5D013E14A3EE0B403A6C7ACE /* Pods-ClonningSpotify.debug.xcconfig */,
 				03C83E714DD674BB6C87E348 /* Pods-ClonningSpotify.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -336,11 +341,13 @@
 				7FF42229296BFB44002F1009 /* HapticsManager.swift in Sources */,
 				7FF42219296BFAB2002F1009 /* AuthViewController.swift in Sources */,
 				7F523460296D807B00751B37 /* AuthResponse.swift in Sources */,
+				7FBC759229751B4B00BD824F /* NewReleasesResponse.swift in Sources */,
 				7FF42217296BFA93002F1009 /* LibraryViewController.swift in Sources */,
 				7F52345E296C68A700751B37 /* Extension.swift in Sources */,
 				7FE32E04296FD20E003BAA03 /* SettingModels.swift in Sources */,
 				7FF4221F296BFACE002F1009 /* PlaylistViewController.swift in Sources */,
 				7FF4222B296BFB5F002F1009 /* PlaylistModel.swift in Sources */,
+				7FBC759429751F5600BD824F /* APIImageModel.swift in Sources */,
 				7FF421F5296BF7C9002F1009 /* AppDelegate.swift in Sources */,
 				7FF4222D296BFB6A002F1009 /* AudioTrackModel.swift in Sources */,
 				7FF421F7296BF7C9002F1009 /* SceneDelegate.swift in Sources */,

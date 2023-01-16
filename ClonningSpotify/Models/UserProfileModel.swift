@@ -15,11 +15,6 @@ struct UserProfileModel: Codable {
     let external_urls: [String: String]
     let id: String
     let product: String
-    let images: [UserImage]
+    let images: [APIImageModel]
 }
 
-struct UserImage: Codable {
-//    let height: String
-    let url: String
-//    let width: String
-}
