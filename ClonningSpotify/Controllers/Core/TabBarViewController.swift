@@ -20,6 +20,10 @@ class TabBarViewController: UITabBarController {
         vc2.title = "Search"
         vc3.title = "Library"
         
+        vc1.view.backgroundColor = .systemBackground
+        vc2.view.backgroundColor = .systemBackground
+        vc3.view.backgroundColor = .systemBackground
+        
         vc1.navigationItem.largeTitleDisplayMode = .always
         vc2.navigationItem.largeTitleDisplayMode = .always
         vc3.navigationItem.largeTitleDisplayMode = .always
