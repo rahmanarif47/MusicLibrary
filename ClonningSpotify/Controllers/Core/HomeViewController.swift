@@ -31,6 +31,10 @@ class HomeViewController: UIViewController {
     
     private var sections = [BrowseSectionType]()
     
+    private var newAlbums : [Album] = []
+    private var tracks: [AudioTrackModel] = []
+    private var  playlist: [Playlist] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Browse"
@@ -148,6 +152,9 @@ class HomeViewController: UIViewController {
         tracks: [AudioTrackModel],
         playlist: [Playlist]
     ) {
+        self.newAlbums = newAlbums
+        self.playlist = playlist
+        self.tracks = tracks
         sections.append(.newReleases(viewModels: newAlbums.compactMap({
             return NewReleasesCellViewModel(
                 name: $0.name,
@@ -157,10 +164,16 @@ class HomeViewController: UIViewController {
             )
         })))
         sections.append(.featurePlaylists(viewModels: playlist.compactMap({
-            return FeaturePlaylistCellViewModel(name: $0.name, artworkURL: URL(string: $0.images.first?.url ?? ""), creatorName: $0.owner.display_name)
+            return FeaturePlaylistCellViewModel(
+                name: $0.name,
+                artworkURL: URL(string: $0.images.first?.url ?? ""),
+                creatorName: $0.owner.display_name)
         })))
         sections.append(.recommendedTracks(viewModels: tracks.compactMap({
-            return RecommendedTrackCellViewModel(name: $0.name, artistName: $0.artists.first?.name ?? "", artworkURL: URL(string: $0.album.images.first?.url ?? ""))
+            return RecommendedTrackCellViewModel(
+                name: $0.name,
+                artistName: $0.artists.first?.name ?? "",
+                artworkURL: URL(string: $0.album.images.first?.url ?? ""))
         })))
         collectionView.reloadData()
     }
@@ -221,8 +234,22 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 return UICollectionViewCell()
             }
             let viewModel = viewModels[indexPath.row]
-            cell.backgroundColor = .orange
+            cell.configure(with: viewModel)
             return cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let section = sections[indexPath.section]
+        switch section {
+        case .featurePlaylists:
+            break
+        case .newReleases:
+            let album = newAlbums[indexPath.row]
+            break
+        case .recommendedTracks:
+            break
         }
     }
     
