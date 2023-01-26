@@ -247,6 +247,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             break
         case .newReleases:
             let album = newAlbums[indexPath.row]
+            let vc = AlbumViewController(album: album)
+            vc.title = album.name
+            vc.navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(vc, animated: true)
             break
         case .recommendedTracks:
             break

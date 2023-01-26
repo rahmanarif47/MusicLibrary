@@ -9,5 +9,6 @@ target 'ClonningSpotify' do
   pod 'SDWebImage'
   pod "Appirater"
   pod 'Firebase/Analytics'
+  pod 'SwiftLint'
 
 end

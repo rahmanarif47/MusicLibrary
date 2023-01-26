@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40E845E00CFB2CD1AC09549B /* Pods_ClonningSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D0CC9B4529CB34C0C8A838 /* Pods_ClonningSpotify.framework */; };
+		7F517C46298195B60026AB4E /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F517C45298195B60026AB4E /* AlbumViewController.swift */; };
 		7F52345E296C68A700751B37 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52345D296C68A700751B37 /* Extension.swift */; };
 		7F523460296D807B00751B37 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F52345F296D807B00751B37 /* AuthResponse.swift */; };
 		7F7D105C297D91CA00B140CF /* NewReleaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D105B297D91CA00B140CF /* NewReleaseCollectionViewCell.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		03C83E714DD674BB6C87E348 /* Pods-ClonningSpotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClonningSpotify.release.xcconfig"; path = "Target Support Files/Pods-ClonningSpotify/Pods-ClonningSpotify.release.xcconfig"; sourceTree = "<group>"; };
 		5D013E14A3EE0B403A6C7ACE /* Pods-ClonningSpotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClonningSpotify.debug.xcconfig"; path = "Target Support Files/Pods-ClonningSpotify/Pods-ClonningSpotify.debug.xcconfig"; sourceTree = "<group>"; };
+		7F517C45298195B60026AB4E /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		7F52345D296C68A700751B37 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		7F52345F296D807B00751B37 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		7F7D105B297D91CA00B140CF /* NewReleaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				7FF4221E296BFACE002F1009 /* PlaylistViewController.swift */,
 				7FF42220296BFAD8002F1009 /* SettingsViewController.swift */,
 				7FF42222296BFB12002F1009 /* SearchResultViewController.swift */,
+				7F517C45298195B60026AB4E /* AlbumViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				7FF42211296BFA45002F1009 /* TabBarViewController.swift in Sources */,
 				7F7D1068297DA4D700B140CF /* RecommendedTrackCellViewModel.swift in Sources */,
 				7FF421F9296BF7C9002F1009 /* HomeViewController.swift in Sources */,
+				7F517C46298195B60026AB4E /* AlbumViewController.swift in Sources */,
 				7FF42213296BFA5E002F1009 /* ProfileViewController.swift in Sources */,
 				7F7D1060297D91E900B140CF /* RecommendedCollectionViewCell.swift in Sources */,
 				7FF42229296BFB44002F1009 /* HapticsManager.swift in Sources */,
