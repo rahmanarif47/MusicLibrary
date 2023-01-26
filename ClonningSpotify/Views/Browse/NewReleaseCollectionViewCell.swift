@@ -75,7 +75,7 @@ class NewReleaseCollectionViewCell: UICollectionViewCell {
                                       height: albumLabelHeight)
         
         artistNameLabel.frame = CGRect(x: albumCoverImageView.right+10,
-                                       y: artistNameLabel.bottom,
+                                       y: albumNameLabel.bottom,
                                        width: contentView.width - albumCoverImageView.right-10,
                                       height: 30)
         
